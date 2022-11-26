@@ -58,26 +58,26 @@ class _UpdateNoteState extends State<UpdateNote> {
                     ),
                   ),
                   SizedBox(height: 20.0),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.email),
-                          border: OutlineInputBorder(),
-                          hintText: "Email"),
-                      onSaved: (value) {
-                        _email = value!;
-                      },
-                      validator: (value) {
-                        if (value!.length > 0) {
-                          if (EmailValidator.validate(value) == false)
-                            return 'Not a valid email';
-                        }
-                      },
-                      keyboardType: TextInputType.emailAddress,
-                    ),
-                  ),
-                  SizedBox(height: 20.0),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(8.0),
+                  //   child: TextFormField(
+                  //     decoration: InputDecoration(
+                  //         prefixIcon: Icon(Icons.email),
+                  //         border: OutlineInputBorder(),
+                  //         hintText: "Email"),
+                  //     onSaved: (value) {
+                  //       _email = value!;
+                  //     },
+                  //     validator: (value) {
+                  //       if (value!.length > 0) {
+                  //         if (EmailValidator.validate(value) == false)
+                  //           return 'Not a valid email';
+                  //       }
+                  //     },
+                  //     keyboardType: TextInputType.emailAddress,
+                  //   ),
+                  // ),
+                  // SizedBox(height: 20.0),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
